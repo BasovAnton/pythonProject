@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    number = int(input("ВВедите число: "))
+    number = int(input("Введите число: "))
     while number != 1:
         if number % 2 == 0:
             number = number/2

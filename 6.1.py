@@ -1,5 +1,5 @@
-def bills():
-    n = int(input("Введите число: "))
+def bills(n):
+
     bills_ = {}
     if n >= 64:
         k = n//64
@@ -32,4 +32,5 @@ def bills():
     return bills_
 
 
-print(bills())
+if __name__ == "__main__":
+    print(bills(int(input("Введите число: "))))
