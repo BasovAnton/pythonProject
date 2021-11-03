@@ -28,7 +28,7 @@ def bills(n):
     if n >= 1:
         k = n//1
         bills_["купюра номиналом 1"] = k
-    return  bills_
+    return bills_
 
 
 if __name__ == "__main__":
