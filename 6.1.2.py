@@ -1,12 +1,11 @@
 def bills(n):
     bills_ = {}
-    for i in [1, 2, 4, 8, 16, 32, 64]:
-        print(i)
-
-        if n >= (64/i):
-            k = n//(64/i)
-            bills_[f"купюра номинал {64/i}"] = k
-            n = n % (64/i)
+    list_ = [2**i for i in range(6, -1, -1)]
+    for i in list_:
+        if n >= i:
+            k = int(n//i)
+            bills_[f"купюра номиналом {i}"] = k
+            n = n % i
     return bills_
 
 
